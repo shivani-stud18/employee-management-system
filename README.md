@@ -1,16 +1,137 @@
-# React + Vite
+# Employee Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Employee Management System built with React.js that provides separate dashboards for Admins and Employees to manage and track tasks efficiently.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://employee-management-system-lyart-eta.vercel.app/
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is a frontend-based Employee Management System created to practice React.js concepts, component-based architecture, state management, Context API, and browser localStorage.
 
-## Expanding the ESLint configuration
+The application provides different interfaces for Admin and Employee users.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+### 👨‍💼 Admin Dashboard
+- Admin login
+- Create and assign tasks to employees
+- View all tasks
+- Track task status
+- Employee task management
+
+### 👩‍💻 Employee Dashboard
+- Employee login
+- View assigned tasks
+- View task statistics
+- Accept new tasks
+- Mark tasks as completed
+- Mark tasks as failed
+
+### ⚡ General Features
+- Responsive UI
+- Component-based React architecture
+- Context API for shared state
+- LocalStorage for data persistence
+- Conditional rendering based on user role
+- Task status management
+- Clean and user-friendly interface
+
+## 🛠️ Tech Stack
+
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Tailwind CSS
+- Vite
+- Context API
+- LocalStorage
+- Git & GitHub
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+│   ├── AdminDashboard.jsx
+│   ├── EmployeeDashboard.jsx
+│   ├── Header.jsx
+│   ├── Login.jsx
+│   ├── CreateTask.jsx
+│   ├── TaskList.jsx
+│   ├── TaskListNumber.jsx
+│   ├── NewTask.jsx
+│   ├── AcceptTask.jsx
+│   ├── CompleteTask.jsx
+│   └── FailedTask.jsx
+│
+├── context/
+│   └── AuthProvider.jsx
+│
+├── utils/
+│   └── localStorage.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## 💻 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/shivani-stud18/employee-management-system.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd employee-management-system
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+## 🔐 Authentication Note
+
+This project uses frontend-based demo authentication with LocalStorage for learning and demonstration purposes.
+
+It is not intended to represent production-level authentication or security.
+
+## 📱 Responsive Design
+
+The application is designed to provide a responsive experience across different screen sizes.
+
+## 🎯 What I Learned
+
+- React component-based development
+- useState and useEffect
+- Context API
+- Props and component communication
+- Conditional rendering
+- Form handling
+- LocalStorage
+- Task status management
+- Responsive UI development
+- Git and GitHub
+- Vercel deployment
+
+## 👩‍💻 Author
+
+**Shivani Kotwal**
+
+React Developer | Frontend Developer
+
+GitHub: https://github.com/shivani-stud18
