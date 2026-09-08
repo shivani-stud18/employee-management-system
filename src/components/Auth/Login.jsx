@@ -65,7 +65,7 @@ const Login = ({ handleLogin }) => {
             onChange={(e) => setEmail(e.target.value)}
             required
             type="email"
-            placeholder="employee1@gmail.com"
+            placeholder="aarav@me.com"
             className="
               w-full
               mt-2
