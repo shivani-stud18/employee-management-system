@@ -126,7 +126,7 @@ const Login = ({ handleLogin }) => {
 
         <div className="mt-6 text-center">
           <p className="text-xs text-gray-600">
-            Employee: employee1@gmail.com / 123
+            Employee: aarav@me.com / 123
           </p>
 
           <p className="text-xs text-gray-600 mt-1">
