@@ -10,7 +10,7 @@ const AuthProvider = ({ children }) => {
     const storedData = getLocalStorage();
     const employees = storedData?.employees;
 
-    // Initialize default data only when employees don't exist
+
     if (!Array.isArray(employees) || employees.length === 0) {
       setLocalStorage();
 

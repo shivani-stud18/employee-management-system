@@ -14,7 +14,7 @@ const TaskList = ({
 
   return (
     <section className="mt-8">
-      {/* Section Header */}
+
       <div className="flex items-center justify-between mb-4">
         <div>
           <h2 className="text-lg sm:text-xl font-semibold text-white">
@@ -30,7 +30,6 @@ const TaskList = ({
         </span>
       </div>
 
-      {/* Task Cards */}
       <div
         className="
           flex
@@ -45,7 +44,7 @@ const TaskList = ({
         "
       >
         {tasks.map((task, index) => {
-          // New Task
+
           if (task.newTask) {
             return (
               <NewTask
@@ -56,7 +55,6 @@ const TaskList = ({
             );
           }
 
-          // Active Task
           if (task.active) {
             return (
               <AcceptTask
@@ -68,7 +66,6 @@ const TaskList = ({
             );
           }
 
-          // Completed Task
           if (task.completed) {
             return (
               <CompleteTask
@@ -78,7 +75,6 @@ const TaskList = ({
             );
           }
 
-          // Failed Task
           if (task.failed) {
             return (
               <FailedTask
@@ -91,7 +87,6 @@ const TaskList = ({
           return null;
         })}
 
-        {/* Empty State */}
         {tasks.length === 0 && (
           <div className="w-full py-12 text-center">
             <p className="text-gray-500 text-sm">

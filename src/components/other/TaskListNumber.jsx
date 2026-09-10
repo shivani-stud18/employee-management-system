@@ -48,7 +48,6 @@ const TaskListNumber = ({ data }) => {
             hover:-translate-y-1
           `}
         >
-          {/* Top Row */}
           <div className="flex items-center justify-between">
             <span className="text-xl sm:text-2xl">
               {item.icon}
@@ -59,7 +58,6 @@ const TaskListNumber = ({ data }) => {
             </span>
           </div>
 
-          {/* Title */}
           <p className="mt-3 text-sm sm:text-base text-gray-300">
             {item.title}
           </p>

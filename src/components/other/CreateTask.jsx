@@ -77,10 +77,8 @@ const CreateTask = () => {
       };
     });
 
-    // Update Context
     setUserData(updatedEmployees);
 
-    // Update localStorage
     localStorage.setItem(
       "employees",
       JSON.stringify(updatedEmployees)
@@ -114,7 +112,6 @@ const CreateTask = () => {
         shadow-xl
       "
     >
-      {/* Header */}
       <div className="mb-7">
         <p className="text-xs uppercase tracking-widest text-emerald-400 mb-2">
           Task Management
@@ -129,7 +126,6 @@ const CreateTask = () => {
         </p>
       </div>
 
-      {/* Success / Error Message */}
       {message && (
         <div
           className={`
@@ -153,7 +149,6 @@ const CreateTask = () => {
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
-          {/* Task Title */}
           <div>
             <label className="block text-sm text-gray-300 mb-2">
               Task Title
@@ -181,7 +176,6 @@ const CreateTask = () => {
             />
           </div>
 
-          {/* Task Date */}
           <div>
             <label className="block text-sm text-gray-300 mb-2">
               Due Date
@@ -207,7 +201,6 @@ const CreateTask = () => {
             />
           </div>
 
-          {/* Employee */}
           <div>
             <label className="block text-sm text-gray-300 mb-2">
               Assign To
@@ -243,7 +236,6 @@ const CreateTask = () => {
             </select>
           </div>
 
-          {/* Category */}
           <div>
             <label className="block text-sm text-gray-300 mb-2">
               Category
@@ -271,7 +263,6 @@ const CreateTask = () => {
             />
           </div>
 
-          {/* Description */}
           <div className="lg:col-span-2">
             <label className="block text-sm text-gray-300 mb-2">
               Task Description
@@ -301,7 +292,6 @@ const CreateTask = () => {
           </div>
         </div>
 
-        {/* Submit */}
         <div className="flex justify-end mt-6">
           <button
             type="submit"

@@ -8,10 +8,8 @@ const AdminDashboard = ({ changeUser }) => {
     <div className="min-h-screen bg-[#111111] p-5 sm:p-7 lg:p-10">
       <div className="max-w-[1600px] mx-auto">
 
-        {/* Header */}
         <Header changeUser={changeUser} />
 
-        {/* Dashboard Intro */}
         <div className="mt-8">
           <div
             className="
@@ -41,10 +39,8 @@ const AdminDashboard = ({ changeUser }) => {
           </div>
         </div>
 
-        {/* Create Task */}
         <CreateTask />
 
-        {/* Employee Performance */}
         <AllTask />
 
       </div>

@@ -22,7 +22,6 @@ body {
     sans-serif;
 }
 
-/* Remove default button/input styling issues */
 
 button,
 input,
@@ -31,7 +30,6 @@ select {
   font: inherit;
 }
 
-/* Better focus accessibility */
 
 button:focus-visible,
 input:focus-visible,
@@ -41,7 +39,6 @@ select:focus-visible {
   outline-offset: 2px;
 }
 
-/* Custom scrollbar */
 
 ::-webkit-scrollbar {
   width: 7px;
@@ -61,14 +58,12 @@ select:focus-visible {
   background: #444444;
 }
 
-/* Firefox scrollbar */
 
 * {
   scrollbar-width: thin;
   scrollbar-color: #333333 #111111;
 }
 
-/* Horizontal task cards */
 
 .task-scroll {
   scrollbar-width: none;
@@ -79,13 +74,11 @@ select:focus-visible {
   display: none;
 }
 
-/* Prevent accidental horizontal page overflow */
 
 body {
   overflow-x: hidden;
 }
 
-/* Text selection */
 
 ::selection {
   background: rgba(16, 185, 129, 0.25);

@@ -8,7 +8,6 @@ const App = () => {
   const [user, setUser] = useState(null);
   const [loggedInUserData, setLoggedInUserData] = useState(null);
 
-  // Restore login session
   useEffect(() => {
     const loggedInUser = localStorage.getItem("loggedInUser");
 
@@ -47,7 +46,6 @@ const App = () => {
   const handleLogin = (email, password) => {
     const { employees, admin } = getLocalStorage();
 
-    // Admin Login
     const adminUser = admin.find(
       (user) =>
         user.email === email &&
@@ -69,7 +67,6 @@ const App = () => {
       return true;
     }
 
-    // Employee Login
     const employeeUser = employees.find(
       (employee) =>
         employee.email === email &&

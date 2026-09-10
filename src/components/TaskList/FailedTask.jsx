@@ -22,7 +22,7 @@ const FailedTask = ({ data }) => {
       "
     >
       <div>
-        {/* Top Section */}
+
         <div className="flex items-center justify-between gap-3">
           <span
             className="
@@ -43,7 +43,6 @@ const FailedTask = ({ data }) => {
           </span>
         </div>
 
-        {/* Task Content */}
         <h2 className="mt-6 text-xl font-semibold text-white">
           {data.taskTitle}
         </h2>
@@ -53,7 +52,6 @@ const FailedTask = ({ data }) => {
         </p>
       </div>
 
-      {/* Status */}
       <div
         className="
           mt-6

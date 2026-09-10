@@ -39,7 +39,6 @@ const EmployeeDashboard = ({ data, changeUser }) => {
 
     setEmployee(updatedEmployee);
 
-    // Update employees in localStorage
     const employees =
       JSON.parse(localStorage.getItem("employees")) || [];
 
@@ -56,10 +55,8 @@ const EmployeeDashboard = ({ data, changeUser }) => {
       JSON.stringify(updatedEmployees)
     );
 
-    // Update AuthContext
     setUserData(updatedEmployees);
 
-    // Update current logged-in employee session
     localStorage.setItem(
       "loggedInUser",
       JSON.stringify({

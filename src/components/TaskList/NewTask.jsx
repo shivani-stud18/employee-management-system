@@ -21,9 +21,9 @@ const NewTask = ({ data, onAccept }) => {
         hover:border-blue-500/40
       "
     >
-      {/* Task Content */}
+
       <div>
-        {/* Top Row */}
+
         <div className="flex items-center justify-between gap-3">
           <span
             className="
@@ -45,18 +45,15 @@ const NewTask = ({ data, onAccept }) => {
           </span>
         </div>
 
-        {/* Task Title */}
         <h2 className="mt-6 text-xl font-semibold text-white">
           {data.taskTitle}
         </h2>
 
-        {/* Description */}
         <p className="text-sm text-gray-400 mt-2 leading-6 line-clamp-3">
           {data.taskDescription}
         </p>
       </div>
 
-      {/* Accept Button */}
       <button
         onClick={() => onAccept(data.taskTitle)}
         className="

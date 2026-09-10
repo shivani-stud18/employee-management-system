@@ -11,7 +11,6 @@ const Header = ({ changeUser, data }) => {
   return (
     <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       
-      {/* Brand / Greeting */}
       <div>
         <p className="text-xs sm:text-sm text-gray-500 mb-1">
           Employee Management System
@@ -25,7 +24,6 @@ const Header = ({ changeUser, data }) => {
         </h1>
       </div>
 
-      {/* Logout */}
       <button
         onClick={logOutUser}
         className="

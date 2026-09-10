@@ -22,7 +22,7 @@ const AllTask = () => {
 
   return (
     <section className="mt-8">
-      {/* Header */}
+
       <div className="mb-5">
         <p className="text-xs uppercase tracking-widest text-emerald-400 mb-2">
           Team Performance
@@ -37,7 +37,6 @@ const AllTask = () => {
         </p>
       </div>
 
-      {/* Desktop Table */}
       <div className="hidden md:block overflow-hidden rounded-2xl border border-white/10 bg-[#1a1a1a]">
         <div className="overflow-x-auto">
           <table className="w-full text-left">
@@ -86,7 +85,6 @@ const AllTask = () => {
                       transition
                     "
                   >
-                    {/* Employee */}
                     <td className="px-6 py-5">
                       <div className="flex items-center gap-3">
                         <div
@@ -120,35 +118,30 @@ const AllTask = () => {
                       </div>
                     </td>
 
-                    {/* New */}
                     <td className="px-6 py-5">
                       <span className="text-blue-400 font-semibold">
                         {taskNumber.newTask || 0}
                       </span>
                     </td>
 
-                    {/* Active */}
                     <td className="px-6 py-5">
                       <span className="text-emerald-400 font-semibold">
                         {taskNumber.active || 0}
                       </span>
                     </td>
 
-                    {/* Completed */}
                     <td className="px-6 py-5">
                       <span className="text-purple-400 font-semibold">
                         {taskNumber.completed || 0}
                       </span>
                     </td>
 
-                    {/* Failed */}
                     <td className="px-6 py-5">
                       <span className="text-red-400 font-semibold">
                         {taskNumber.failed || 0}
                       </span>
                     </td>
 
-                    {/* Completion */}
                     <td className="px-6 py-5 min-w-[180px]">
                       <div className="flex items-center gap-3">
                         <div className="flex-1 h-2 bg-white/5 rounded-full overflow-hidden">
@@ -173,7 +166,6 @@ const AllTask = () => {
         </div>
       </div>
 
-      {/* Mobile Cards */}
       <div className="md:hidden space-y-4">
         {userData?.map((employee) => {
           const taskNumber = employee.taskNumber || {};
@@ -190,7 +182,6 @@ const AllTask = () => {
                 p-5
               "
             >
-              {/* Employee */}
               <div className="flex items-center gap-3 mb-5">
                 <div
                   className="
@@ -222,7 +213,6 @@ const AllTask = () => {
                 </div>
               </div>
 
-              {/* Stats */}
               <div className="grid grid-cols-2 gap-3">
                 <div className="p-3 rounded-xl bg-blue-500/5 border border-blue-500/10">
                   <p className="text-xs text-gray-500">
@@ -265,7 +255,6 @@ const AllTask = () => {
                 </div>
               </div>
 
-              {/* Completion */}
               <div className="mt-5">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-xs text-gray-500">
@@ -291,7 +280,6 @@ const AllTask = () => {
         })}
       </div>
 
-      {/* Empty State */}
       {(!userData || userData.length === 0) && (
         <div className="text-center py-12 text-gray-500">
           No employee data available.
